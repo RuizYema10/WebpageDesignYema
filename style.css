@@ -1,0 +1,246 @@
+/* General Styles */
+body {
+    background-color: #f4f4f4; /* Light background for general readability */
+    color: #333; /* Darker text color (dark gray) for contrast */
+    font-family: 'Helvetica Neue', sans-serif; /* Modern font */
+    text-align: center;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Homepage */
+.hero-section {
+    background-image: url('your-image.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: #333; /* Dark text color for readability */
+    padding: 150px 0;
+    position: relative;
+    animation: fadeIn 3s ease-out;
+    background-color: rgba(255, 255, 255, 0.6); /* Lighter overlay for better contrast */
+}
+
+/* Hero Text */
+.hero-text {
+    animation: slideUp 1.5s ease-out;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #333; /* Dark text for readability */
+    text-shadow: none; /* Removed shadow to keep text dark and clear */
+    letter-spacing: 2px;
+}
+
+/* Product Card Styles */
+.product-card {
+    margin-bottom: 40px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    background-color: #fff; /* White background for high contrast */
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.product-card h3 {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #222; /* Very dark gray for product titles */
+}
+
+.product-card p {
+    font-size: 1.1rem;
+    color: #444; /* Darker gray for product descriptions */
+    line-height: 1.6;
+}
+
+/* Button Styles */
+.product-card .btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #333; /* Dark button background */
+    color: #fff; /* White text on dark background */
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-card .btn:hover {
+    background-color: #555; /* Lighter gray on hover */
+    transform: translateY(-5px);
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* About Us Section Styling */
+.about-us {
+    background-color: #fff; /* White background for About Us section */
+    padding: 60px 0;
+    color: #333; /* Dark text for readability */
+}
+
+.about-us h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #111; /* Very dark gray for headings */
+    margin-bottom: 20px;
+}
+
+.about-us p.lead {
+    font-size: 1.2rem;
+    color: #444; /* Slightly lighter gray for paragraph text */
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.about-us h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #222; /* Dark gray for subheadings */
+}
+
+.about-us ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.about-us ul li {
+    font-size: 1.2rem;
+    color: #444; /* Darker gray for list items */
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f1f1f1; /* Light footer background */
+    padding: 50px 0;
+    text-align: center;
+    color: #333; /* Dark text for footer */
+}
+
+.footer p {
+    font-size: 1rem;
+    color: #555; /* Slightly lighter gray for footer text */
+}
+
+.footer a {
+    color: #333; /* Dark color for footer links */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #007bff; /* Blue color for links on hover */
+    text-decoration: underline;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #fff; /* White background for navbar */
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+    color: #333; /* Dark text for navbar brand */
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #333; /* Dark color for navbar links */
+    font-size: 18px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff; /* Blue color on hover */
+    text-decoration: underline;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background-color: #555; /* Lighter gray on hover */
+    transform: translateY(-4px);
+    transition: 0.2s ease;
+}
+
+/* Animations */
+
+/* Fade-in keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Slide-up animation for Hero Text */
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+    .hero-section {
+        padding: 100px 0;
+    }
+
+    .hero-text {
+        font-size: 2.5rem;
+    }
+
+    .product-card {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .product-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .product-card p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 22px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 16px;
+    }
+}

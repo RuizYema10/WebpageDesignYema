@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom Styling */
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .product-card {
+            margin-bottom: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-card img {
+            border-radius: 8px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            margin-top: 15px;
+            font-size: 1.4rem;
+        }
+
+        .product-card p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .product-card .btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .product-card .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 1rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">OOTD Products</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Product Section -->
+<div class="container my-5">
+    <h1 class="text-center mb-4">Our Featured Products</h1>
+    <div class="product-grid">
+        <!-- Product Cards -->
+        <div class="product-card">
+            <img src="42405_ICDY_2000x.jpg" alt="Flannel" class="product-image">
+            <h3>FLANNEL</h3>
+            <p>Women's Long-Sleeved Organic Cotton Midweight Fjord Flannel Shirt. PHP 3,639.33</p>
+            <a href="product.html?product=1" class="btn">View</a>
+        </div>
+        <div class="product-card">
+            <img src="12686420800-e1.jpg" alt="Leather Penny Strap Loafers" class="product-image">
+            <h3>LEATHER PENNY STRAP LOAFERS</h3>
+            <p>Formal loafers crafted from high-quality leather. PHP 11,595.00</p>
+            <a href="product.html?product=2" class="btn">View</a>
+        </div>
+        <div class="product-card">
+            <img src="Capture.JPG" alt="Premium Essentials Crew Socks" class="product-image">
+            <h3>PREMIUM ESSENTIALS CREW SOCKS</h3>
+            <p>Made with natural and renewable materials. PHP 1,100</p>
+            <a href="product.html?product=3" class="btn">View</a>
+        </div>
+        <div class="product-card">
+            <img src="13679520700-e1.jpg" alt="Woven Crossbody Bag" class="product-image">
+            <h3>WOVEN CROSSBODY BAG</h3>
+            <p>Braided crossbody bag. PHP 1,995.00</p>
+            <a href="product.html?product=4" class="btn">View</a>
+        </div>
+        <div class="product-card">
+            <img src="03920359800-e1.jpg" alt="Basic Soft Cap" class="product-image">
+            <h3>BASIC SOFT CAP</h3>
+            <p>Peak cap made of cotton fabric. PHP 1,195.00</p>
+            <a href="product.html?product=5" class="btn">View</a>
+        </div>
+        <div class="product-card">
+            <img src="01012400808-e1.jpg" alt="Chain with Metal Links" class="product-image">
+            <h3>CHAIN WITH METAL LINKS - LIMITED EDITION</h3>
+            <p>Chain composed of metal links. PHP 1,695.00</p>
+            <a href="product.html?product=6" class="btn">View</a>
+        </div>
+        <div class="product-card">
+            <img src="20210634999-e1.jpg" alt="Chain with Metal Links" class="product-image">
+            <h3>SEOUL SUMMER EDT 90 ML / 3.04 oz</h3>
+            <p>The woody and amber base adds warmth, creating a vibrant aroma ideal for summer. PHP 4,395.00</p>
+            <a href="product.html?product=7" class="btn">View</a>
+        </div>
+        <div class="product-card">
+            <img src="02750404760-e1.jpg" alt="Chain with Metal Links" class="product-image">
+            <h3>RECTANGULAR SUNGLASSES</h3>
+            <p>Rectangular sunglasses with a tortoiseshell-effect acetate frame. Polarised lenses. PHP 1,145.00</p>
+            <a href="product.html?product=8" class="btn">View</a>
+        </div>
+    </div>
+</div>
+<div class="container my-5 product-details">
+    <div class="row">
+        <div class="col-md-6">
+            <img id="product-image" src="" alt="Product Image" class="product-image">
+        </div>
+        <div class="col-md-6">
+            <h2 id="product-name">Product Name</h2>
+            <p id="product-description">Product Description</p>
+            <p id="product-price">Price</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('product');
+
+    const products = {
+        1: { name: "FLANNEL", img: "42405_ICDY_2000x.jpg", description: "Women's Long-Sleeved Organic Cotton Midweight Fjord Flannel Shirt is PHP 3,639.33 in the Philippines.  Prices may vary depending on the retailer." },
+        2: { name: "LEATHER PENNY STRAP LOAFERS", img: "12686420800-e1.jpg", description: " This Limited Editiom Leather Penny Strap Shoes is PHP 11,595.00 in the Philippines, though prices may vary depending on the retailer." },
+        3: { name: "PREMIUM ESSENTIAlS CREW SOCKS 2 pairs", img: "Capture.JPG", description: "This Premium Essentials Socks are PHP 1,100 in the Philippines, though prices may vary depending on the retailer.." },
+        4: { name: "WOVEN CROSSBODY BAG", img: "13679520700-e1.jpg", description: "This ZARA Woven CrossBody Bag is PHP 1,995.00 in the Philippines, though prices may vary depending on the retailer." },
+        5: { name: "BASIC SOFT CAP", img: "03920359800-e1.jpg", description: "This Basic Soft Cap is PHP 1,195.00 in the Philippines, though prices may vary depending on the retailer." },
+        6: { name: "CHAIN WITH METAL LINKS - LIMITED EDITION", img: "01012400808-e1.jpg", description: "This LIMITED EDITION Chains With Meta Links is PHP 1,695.00 in the Philippines, though prices may vary depending on the retailer." },
+        7: { name: "SEOUL SUMMER EDT 90 ML / 3.04 oz", img: "images/kia handyyy.jpg", description: "This Perfume is PHP 4,395.00 in the Philippines, though prices may vary depending on the retailer." },
+        8: { name: "RECTANGULAR SUNGLASSES", img: "02750404760-e1.jpg", description: "This Sunglasses is PHP 1,145.00 in the Philippines, though prices may vary depending on the retailer." },
+    };
+
+    if (products[productId]) {
+        document.getElementById("product-name").innerText = products[productId].name;
+        document.getElementById("product-image").src = products[productId].img;
+        document.getElementById("product-description").innerText = products[productId].description;
+        document.getElementById("product-price").innerText = products[productId].price;
+    } else {
+        document.getElementById("product-name").innerText = "Product not found";
+        document.getElementById("product-description").innerText = "Sorry, this product does not exist.";
+        document.getElementById("product-price").innerText = "";
+    }
+</script>
+<!-- Footer -->
+<footer id="footer" class="footer">
+    <p>&copy; 2025 ShopNow. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
